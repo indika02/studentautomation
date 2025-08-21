@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
 //                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
-        tags = "@test",
+        tags = {"@test"}, // Tags to filter scenarios
         monochrome = true
 )
 public class testRunner {

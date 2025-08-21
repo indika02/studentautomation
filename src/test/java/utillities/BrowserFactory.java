@@ -15,9 +15,9 @@ public class BrowserFactory {
             String projectLocation = System.getProperty("user.dir");
             System.setProperty("webdriver.chrome.driver", projectLocation+"/drivers/chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
+//            options.addArguments("--incognito");
+            options.setHeadless(true);
             options.addArguments("--ignore-certificate-errors");
-            options.addArguments("--incognito");
-            options.setHeadless(false);
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
             String projectLocation = System.getProperty("user.dir");

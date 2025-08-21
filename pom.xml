@@ -121,7 +121,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Banking</projectName>
+                            <projectName>Student Management System</projectName>
                             <outputDirectory>${project.build.directory}/reports</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                             <buildNumber>0.0.23</buildNumber>

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2025-08-19T08:49:26.703Z",
+        "start_timestamp": "2025-08-21T16:44:59.799Z",
         "line": 4,
         "name": "Login as a Admin",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5872390200,
+              "duration": 7929057100,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 253651600,
+              "duration": 191371300,
               "status": "passed"
             },
             "line": 6,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 99277300,
+              "duration": 86208100,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 117645000,
+              "duration": 86149400,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 926321300,
+              "duration": 905668400,
               "status": "passed"
             },
             "line": 9,
@@ -88,11 +88,117 @@
               "location": "stepDefinitions.dashboardPageSteps.verifyDashboardHeader(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 178424600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Logout from the system",
+            "match": {
+              "location": "stepDefinitions.dashboardPageSteps.logout()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
             "name": "@test"
+          },
+          {
+            "name": "@valid_login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-08-21T16:45:09.215Z",
+        "line": 14,
+        "name": "Verify the invalid login error message",
+        "description": "",
+        "id": "login-page-test-cases;verify-the-invalid-login-error-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34020700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Load UI",
+            "match": {
+              "location": "stepDefinitions.loginPageSteps.loadUI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69164300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter the Username admin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.loginPageSteps.enterUsername(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62719300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter the password as wrongpassword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "wrongpassword",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.loginPageSteps.enterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62518100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click the login button",
+            "match": {
+              "location": "stepDefinitions.loginPageSteps.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 868805200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the error message as Invalid credentials",
+            "match": {
+              "location": "stepDefinitions.loginPageSteps.verifyTheErrorMessageAsInvalidCredentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          },
+          {
+            "name": "@invalid_login"
           }
         ]
       }

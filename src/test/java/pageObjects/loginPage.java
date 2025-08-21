@@ -13,7 +13,7 @@ public class loginPage extends ActionCommands {
     private By passwordbox=By.id("password");
     private By loginbutton=By.xpath("//*[@id=\"root\"]/div[2]/div/div/div[2]/form/button");
     private By footerTxt=By.xpath("//p[contains(@class,'orangehrm-copyright')]");
-
+    private By loginErrorMessage=By.xpath("//*[@id=\"root\"]/div[1]/ol/li/div/div[1]");
 
     public loginPage(WebDriver driver) {
         this.driver = driver;
@@ -39,6 +39,10 @@ public class loginPage extends ActionCommands {
         click(driver,loginbutton);
     }
 
+    public void verifyTheErrorMessageAsInvalidCredentials() {
+        waitTime(driver, loginErrorMessage);
+        verifyText(driver, loginErrorMessage, "Login failed");
+    }
 
     public void verifyFooterText(String text){
         waitTime(driver,footerTxt);

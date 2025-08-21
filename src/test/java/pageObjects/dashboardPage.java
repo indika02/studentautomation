@@ -20,8 +20,8 @@ public class dashboardPage extends ActionCommands {
 
 
 //    private By dashboardHeader=By.xpath("//*[@id=\"root\"]/div/header/h1");
-    private By usernameIcon=By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[3]/ul[1]/li[1]/span[1]/p[1]");
-    private By logoutBtn=By.xpath("//*[@id=\"root\"]/div/header/div/button[2]");
+    private By usernameIcon=By.xpath("//*[@id=\"root\"]/div[2]/div/header/div[2]/div[1]/div[1]/div[1]");
+    private By logoutBtn=By.xpath("//*[@id=\"root\"]/div[2]/div/header/div[2]/div[2]/button");
     private By searchBox=By.xpath("//input[@placeholder='Search']");
     private By tab=By.xpath("/html/body/div[1]/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span");
     private By upgradeBtn=By.xpath("/html/body/div[1]/div[1]/div[1]/header/div[1]/div[2]/a/button");
