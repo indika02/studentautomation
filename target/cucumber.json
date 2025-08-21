@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-08-19T08:49:26.703Z",
+        "line": 4,
+        "name": "Login as a Admin",
+        "description": "",
+        "id": "login-page-test-cases;login-as-a-admin",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5872390200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Load UI",
+            "match": {
+              "location": "stepDefinitions.loginPageSteps.loadUI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 253651600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the Username admin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.loginPageSteps.enterUsername(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99277300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the password as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.loginPageSteps.enterPassword(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117645000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click the login button",
+            "match": {
+              "location": "stepDefinitions.loginPageSteps.clickLoginButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 926321300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify the dashboard header as Student MS",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Student MS",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.dashboardPageSteps.verifyDashboardHeader(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login page test cases",
+    "description": "",
+    "id": "login-page-test-cases",
+    "keyword": "Feature",
+    "uri": "file:Features/login.feature",
+    "tags": []
+  }
+]
