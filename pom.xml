@@ -96,6 +96,11 @@
             <artifactId>eyes-selenium-java5</artifactId>
             <version>5.81.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>6.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
