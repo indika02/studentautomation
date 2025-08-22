@@ -16,7 +16,7 @@ public class BrowserFactory {
             System.setProperty("webdriver.chrome.driver", projectLocation+"/drivers/chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--incognito");
-            options.setHeadless(true);
+            options.addArguments("--headless"); // Uncomment this line to run Chrome in headless mode
             options.addArguments("--ignore-certificate-errors");
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -30,11 +30,5 @@ public class BrowserFactory {
         return driver;
     }
 
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
-        }
-    }
+
 }

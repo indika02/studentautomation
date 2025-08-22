@@ -1,9 +1,9 @@
 utillities\BaseClass.class
 pageObjects\dashboardPage.class
 pageObjects\loginPage.class
-utillities\BrowserFactory.class
-testRunner\testRunner.class
 utillities\ConfigDataProvider.class
+testRunner\TestRunner.class
+utillities\BrowserFactory.class
 utillities\ActionCommands.class
 stepDefinitions\dashboardPageSteps.class
 stepDefinitions\loginPageSteps.class
