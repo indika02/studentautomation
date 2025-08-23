@@ -40,8 +40,8 @@ public class loginPageSteps {
     }
 
 
-    @Then("Verify the error message as Invalid credentials")
-    public void verifyTheErrorMessageAsInvalidCredentials() {
-        loginPage.verifyTheErrorMessageAsInvalidCredentials();
+    @Then("^Verify the error message as (.*)$")
+    public void verifyTheErrorMessageAsInvalidCredentials(String text) {
+        loginPage.verifyTheErrorMessageAsInvalidCredentials(text);
     }
 }
