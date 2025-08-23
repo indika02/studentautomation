@@ -16,4 +16,4 @@ Feature: Login page test cases
     Then Enter the Username admin
     Then Enter the password as wrongpassword
     Then Click the login button
-    Then Verify the error message as Invalid credentials
+    Then Verify the error message as Invalid username or password

@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.434 s <<< FAILURE! - in TestSuite
-runScenario(testRunner.TestRunner)  Time elapsed: 1.959 s  <<< FAILURE!
-java.lang.AssertionError: expected [Invalid credentials] but found [Invalid username or password]
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.461 s - in TestSuite
